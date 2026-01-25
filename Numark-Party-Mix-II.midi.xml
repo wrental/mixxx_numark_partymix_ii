@@ -179,6 +179,7 @@
 				<options />
 			</control>
 
+
 			<!-- PADS -->
 
 			<control>
@@ -284,6 +285,32 @@
 				<options>
 					<Script-Binding />
 				</options>
+			</control>
+
+			<!-- JOGWHEEL -->
+			<control>
+				<group>[Channel1]</group>
+				<description>Jogwheel Encoder</description>
+				<key>NumarkPartyMixII.jogwheel</key>
+				<status>0xB0</status>
+				<midino>0x06</midino>
+				<options />
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<description>Jogwheel Scratch Platter</description>
+				<key>NumarkPartyMixII.jogwheel</key>
+				<status>0x90</status>
+				<midino>0x06</midino>
+				<options />
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<description>Jogwheel Scratch Platter</description>
+				<key>NumarkPartyMixII.jogwheel</key>
+				<status>0x80</status>
+				<midino>0x06</midino>
+				<options />
 			</control>
 
 
