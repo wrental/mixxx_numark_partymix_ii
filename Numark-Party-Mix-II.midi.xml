@@ -230,6 +230,7 @@
 				<options>
 					<Script-Binding />
 				</options>
+			</control>
 			<control>
 				<group>[Channel1]</group>
 				<description>Pad 2</description>
@@ -251,6 +252,7 @@
 				<options>
 					<Script-Binding />
 				</options>
+			</control>
 			<control>
 				<group>[Channel1]</group>
 				<description>Pad 3</description>
@@ -272,6 +274,7 @@
 				<options>
 					<Script-Binding />
 				</options>
+			</control>
 			<control>
 				<group>[Channel1]</group>
 				<description>Pad 4</description>
@@ -282,6 +285,7 @@
 					<Script-Binding />
 				</options>
 			</control>
+
 
 
     </controls>
