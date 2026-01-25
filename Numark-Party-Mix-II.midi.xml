@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MixxxMIDIPreset schemaVersion="1" mixxxVersion="2.5.2">
+  <info>
+    <name>Numark Party Mix II</name>
+    <author>wrental</author>
+    <description>Default mappings for Numark Party Mix II.</description>
+  </info>
+  <controller id="Numark Party Mix II">
+    <scriptfiles>
+			<file functionprefix="NumarkPartyMixII" filename="Numark-Party-Mix-II.scripts.js" />
+		</scriptfiles>
+
+    <controls>
+
+      <!-- MASTER -->
+      <control>
+        <group>[Master]</group>
+        <key>crossfader</key>
+        <status>0xBF</status>
+        <midino>0x08</midino>
+        <options />
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>gain</key>
+        <status>0xBF</status>
+        <midino>0x0A</midino>
+        <options />
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>headGain</key>
+        <status>0xBF</status>
+        <midino>0x0C</midino>
+        <options />
+      </control>
+
+			<!-- LIBRARY -->
+			<control>
+				<group>[Library]</group>
+				<key>GoToItem</key>
+				<status>0x9F</status>
+				<midino>0x07</midino>
+				<options />
+			</control>
+			<control>
+				<group>[Library]</group>
+				<key>MoveVertical</key>
+				<status>0xBF</status>
+				<midino>0x00</midino>
+				<options>
+					<SelectKnob />
+				</options>
+			</control>
+
+			<!-- DECK 1 (L) -->
+
+			<!-- Play/Pause, Cue, Sync -->
+			<control>
+				<group>[Channel1]</group>
+				<key>play</key>
+				<status>0x90</status>
+				<midino>0x00</midino>
+				<options />
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>play</key>
+				<status>0x80</status>
+				<midino>0x00</midino>
+				<options />
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>cue_default</key>
+				<status>0x90</status>
+				<midino>0x01</midino>
+				<options />
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>cue_default</key>
+				<status>0x80</status>
+				<midino>0x01</midino>
+				<options />
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<key>beatsync</key>
+				<status>0x90</status>
+				<midino>0x02</midino>
+				<options />
+			</control>
+
+			<!-- Gain, Vol, Pitch, Load, PFL/Cue -->
+			<control>
+				<group>[Channel1]</group>
+				<description>Deck Level Knob</description>
+				<key>pregain</key>
+				<status>0xB0</status>
+				<midino>0x17</midino>
+				<options />
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<description>Deck Volume Fader</description>
+				<key>volume</key>
+				<status>0xB0</status>
+				<midino>0x1C</midino>
+				<options />
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<description>Deck Speed Fader</description>
+				<key>rate</key>
+				<status>0xB0</status>
+				<midino>0x09</midino>
+				<options />
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<description>Load Track to Deck</description>
+				<key>LoadSelectedTrack</key>
+				<status>0x9F</status>
+				<midino>0x02</midino>
+				<options />
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<description>Deck PFL/Cue</description>
+				<key>NumarkPartyMixII.pfl</key>
+				<status>0x90</status>
+				<midino>0x1B</midino>
+				<options>
+					<Script-Binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<description>Deck PFL/Cue</description>
+				<key>NumarkPartyMixII.pfl</key>
+				<status>0x80</status>
+				<midino>0x1B</midino>
+				<options>
+					<Script-Binding />
+				</options>
+			</control>
+				
+			<!-- EQ and Filter -->
+			<control>
+				<group>[EqualizerRack1_[Channel1]_Effect1]</group>
+				<description>Treble Filter</description>
+				<key>parameter3</key>
+				<status>0xB0</status>
+				<midino>0x18</midino>
+				<options />
+			</control>
+			<control>
+				<group>[EqualizerRack1_[Channel1]_Effect1]</group>
+				<description>Bass Filter</description>
+				<key>parameter1</key>
+				<status>0xB0</status>
+				<midino>0x19</midino>
+				<options />
+			</control>
+			<control>
+				<group>[QuickEffectRack1_[Channel1]]</group>
+				<description>Quick Effect Super Knob</description>
+				<key>super1</key>
+				<status>0xB0</status>
+				<midino>0x1A</midino>
+				<options />
+			</control>
+
+			<!-- PADS -->
+
+			<control>
+				<group>[Channel1]</group>
+				<description>Pad Mode</description>
+				<key>NumarkPartyMixII.padMode</key>
+				<status>0x9F</status>
+				<midino>0x32</midino>
+				<options />
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<description>Pad Mode</description>
+				<key>NumarkPartyMixII.padMode</key>
+				<status>0x8F</status>
+				<midino>0x32</midino>
+				<options />
+			</control>
+
+			<!-- PAD 1 -->
+			<control>
+				<group>[Channel1]</group>
+				<description>Pad 1</description>
+				<key>NumarkPartyMixII.pad</key>
+				<status>0x94</status>
+				<midino>0x14</midino>
+				<options>
+					<Script-Binding />
+				</options>
+			</control>
+			<control>
+				<group>[Channel1]</group>
+				<description>Pad 1</description>
+				<key>NumarkPartyMixII.pad</key>
+				<status>0x84</status>
+				<midino>0x14</midino>
+				<options>
+					<Script-Binding />
+				</options>
+			</control>
+	
+			<!-- PAD 2 -->
+			<control>
+				<group>[Channel1]</group>
+				<description>Pad 2</description>
+				<key>NumarkPartyMixII.pad</key>
+				<status>0x94</status>
+				<midino>0x15</midino>
+				<options>
+					<Script-Binding />
+				</options>
+			<control>
+				<group>[Channel1]</group>
+				<description>Pad 2</description>
+				<key>NumarkPartyMixII.pad</key>
+				<status>0x84</status>
+				<midino>0x15</midino>
+				<options>
+					<Script-Binding />
+				</options>
+			</control>
+	
+			<!-- PAD 3 -->
+			<control>
+				<group>[Channel1]</group>
+				<description>Pad 3</description>
+				<key>NumarkPartyMixII.pad</key>
+				<status>0x94</status>
+				<midino>0x16</midino>
+				<options>
+					<Script-Binding />
+				</options>
+			<control>
+				<group>[Channel1]</group>
+				<description>Pad 3</description>
+				<key>NumarkPartyMixII.pad</key>
+				<status>0x84</status>
+				<midino>0x16</midino>
+				<options>
+					<Script-Binding />
+				</options>
+			</control>
+	
+			<!-- PAD 4 -->
+			<control>
+				<group>[Channel1]</group>
+				<description>Pad 4</description>
+				<key>NumarkPartyMixII.pad</key>
+				<status>0x94</status>
+				<midino>0x17</midino>
+				<options>
+					<Script-Binding />
+				</options>
+			<control>
+				<group>[Channel1]</group>
+				<description>Pad 4</description>
+				<key>NumarkPartyMixII.pad</key>
+				<status>0x84</status>
+				<midino>0x17</midino>
+				<options>
+					<Script-Binding />
+				</options>
+			</control>
+
+
+    </controls>
+  </controller>
+</MixxxMIDIPreset>
