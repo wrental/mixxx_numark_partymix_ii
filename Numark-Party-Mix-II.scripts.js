@@ -5,12 +5,14 @@
 
 var NumarkPartyMixII = {};
 var ControllerStatusSysex = [0xF0, 0x00, 0x20, 0x7F, 0x03, 0x01, 0xF7];
+var mode1 = "hotcue";
+var	mode2 = "hotcue";
 
 NumarkPartyMixII.init = function (id, debugging) {
 	// serato SysEx state check
 	midi.sendSysexMsg(ControllerStatusSysex, ControllerStatusSysex.length);
 
-	// check/set global PAD_MODE variables (PAD_MODE_1, PAD_MODE_2)
+	// check/set global PAD_MODE variables 
 
 
 	// check/set global SCRATCH booleans (SCRATCH_1, SCRATCH_2)
@@ -31,13 +33,33 @@ NumarkPartyMixII.pfl = function (_channel, _control, value, _status, group) {
 	}
 }
 
+NumarkPartyMixII.getMode = function (group) {
+	if (group === "[Channel1") {return mode1}
+	else if (group === "[Channel2]") {return mode2}
+	else return null;
+}
+
+NumarkPartyMixII.switchToMode = function (channel, control, value, status, group) {
+
+}
+
 NumarkPartyMixII.pad = function (channel, control, value, status, group) {
-
+	switch (NumarkPartyMixII.getMode(group)) {
+		case "hotcue":
+			
+			break;
+		case "loop":
+			
+			break;
+		case "sample":
+		
+			break;
+		case "effect":
+			
+			break;
+	}
 }
 
-NumarkPartyMixII.padMode = function (channel, control, value, status, group) {
-
-}
 
 NumarkPartyMixII.jogwheel = function (channel, control, value, status, group) {
 
