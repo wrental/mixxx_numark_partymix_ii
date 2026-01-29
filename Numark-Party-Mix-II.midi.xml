@@ -5,10 +5,91 @@
     <author>wrental</author>
     <description>Default mappings for Numark Party Mix II.</description>
   </info>
+
+		<settings>
+			<group label="Beatloop Size Settings">
+				<option variable="pad1Loop" type="enum" label="Pad 1 Loop Size">
+				<description>Length (in beats) of beatloop set by Pad 1</description>
+					<value label="1/32">0.03125</value>
+					<value label="1/16">0.0625</value>
+					<value label="1/8">0.125</value>
+					<value label="1/4">0.25</value>
+					<value label="1/2">0.5</value>
+					<value default="1" label="1 (default)">1</value>
+					<value label="2">2</value>
+					<value label="4">4</value>
+					<value label="8">8</value>
+					<value label="16">16</value>
+					<value label="32">32</value>
+					<value label="64">64</value>
+					<value label="128">128</value>
+					<value label="256">256</value>
+					<value label="512">512</value>
+				</option>
+				<option variable="pad2Loop" type="enum" label="Pad 2 Loop Size">
+				<description>Length (in beats) of beatloop set by Pad 2</description>
+					<value label="1/32">0.03125</value>
+					<value label="1/16">0.0625</value>
+					<value label="1/8">0.125</value>
+					<value label="1/4">0.25</value>
+					<value label="1/2">0.5</value>
+					<value label="1">1</value>
+					<value default="2" label="2 (default)">2</value>
+					<value label="4">4</value>
+					<value label="8">8</value>
+					<value label="16">16</value>
+					<value label="32">32</value>
+					<value label="64">64</value>
+					<value label="128">128</value>
+					<value label="256">256</value>
+					<value label="512">512</value>
+				</option>
+				<option variable="pad3Loop" type="enum" label="Pad 3 Loop Size">
+				<description>Length (in beats) of beatloop set by Pad 3</description>
+					<value label="1/32">0.03125</value>
+					<value label="1/16">0.0625</value>
+					<value label="1/8">0.125</value>
+					<value label="1/4">0.25</value>
+					<value label="1/2">0.5</value>
+					<value label="1">1</value>
+					<value label="2">2</value>
+					<value default="4" label="4 (default)">4</value>
+					<value label="8">8</value>
+					<value label="16">16</value>
+					<value label="32">32</value>
+					<value label="64">64</value>
+					<value label="128">128</value>
+					<value label="256">256</value>
+					<value label="512">512</value>
+				</option>
+				<option variable="pad4Loop" type="enum" label="Pad 4 Loop Size">
+				<description>Length (in beats) of beatloop set by Pad 4</description>
+					<value label="1/32">0.03125</value>
+					<value label="1/16">0.0625</value>
+					<value label="1/8">0.125</value>
+					<value label="1/4">0.25</value>
+					<value label="1/2">0.5</value>
+					<value label="1">1</value>
+					<value label="2">2</value>
+					<value label="4">4</value>
+					<value default="8" label="8 (default)">8</value>
+					<value label="16">16</value>
+					<value label="32">32</value>
+					<value label="64">64</value>
+					<value label="128">128</value>
+					<value label="256">256</value>
+					<value label="512">512</value>
+				</option>
+
+			</group>
+		</settings>
+
+
   <controller id="Numark Party Mix II">
     <scriptfiles>
 			<file functionprefix="NumarkPartyMixII" filename="Numark-Party-Mix-II.scripts.js" />
 		</scriptfiles>
+		
 
     <controls>
 
@@ -190,7 +271,7 @@
 			<control>
 				<group>[Channel1]</group>
 				<description>Pad Mode</description>
-				<key>NumarkPartyMixII.padMode</key>
+				<key></key>
 				<status>0x9F</status>
 				<midino>0x32</midino>
 				<options />
@@ -198,7 +279,7 @@
 			<control>
 				<group>[Channel1]</group>
 				<description>Pad Mode</description>
-				<key>NumarkPartyMixII.padMode</key>
+				<key></key>
 				<status>0x8F</status>
 				<midino>0x32</midino>
 				<options />
@@ -208,7 +289,7 @@
 			<control>
 				<group>[Channel1]</group>
 				<description>Pad Mode - Hot Cue (default)</description>
-				<key>NumarkPartyMixII.switchToMode</key>
+				<key>NumarkPartyMixII.switchMode</key>
 				<status>0x94</status>
 				<midino>0x00</midino>
 				<options />
@@ -216,7 +297,7 @@
 			<control>
 				<group>[Channel1]</group>
 				<description>Pad Mode - Loop</description>
-				<key>NumarkPartyMixII.switchToMode</key>
+				<key>NumarkPartyMixII.switchMode</key>
 				<status>0x94</status>
 				<midino>0x0E</midino>
 				<options />
@@ -224,7 +305,7 @@
 			<control>
 				<group>[Channel1]</group>
 				<description>Pad Mode - Sample</description>
-				<key>NumarkPartyMixII.switchToMode</key>
+				<key>NumarkPartyMixII.switchMode</key>
 				<status>0x94</status>
 				<midino>0x0B</midino>
 				<options />
@@ -232,7 +313,7 @@
 			<control>
 				<group>[Channel1]</group>
 				<description>Pad Mode - Effects</description>
-				<key>NumarkPartyMixII.switchToMode</key>
+				<key>NumarkPartyMixII.switchMode</key>
 				<status>0x94</status>
 				<midino>0x0F</midino>
 				<options />
@@ -482,7 +563,7 @@
 			<control>
 				<group>[Channel2]</group>
 				<description>Pad Mode</description>
-				<key>NumarkPartyMixII.padMode</key>
+				<key></key>
 				<status>0x9F</status>
 				<midino>0x32</midino>
 				<options />
@@ -490,7 +571,7 @@
 			<control>
 				<group>[Channel2]</group>
 				<description>Pad Mode</description>
-				<key>NumarkPartyMixII.padMode</key>
+				<key></key>
 				<status>0x8F</status>
 				<midino>0x32</midino>
 				<options />
@@ -500,7 +581,7 @@
 			<control>
 				<group>[Channel2]</group>
 				<description>Pad Mode - Hot Cue (default)</description>
-				<key>NumarkPartyMixII.switchToMode</key>
+				<key>NumarkPartyMixII.switchMode</key>
 				<status>0x95</status>
 				<midino>0x00</midino>
 				<options />
@@ -508,7 +589,7 @@
 			<control>
 				<group>[Channel2]</group>
 				<description>Pad Mode - Loop</description>
-				<key>NumarkPartyMixII.switchToMode</key>
+				<key>NumarkPartyMixII.switchMode</key>
 				<status>0x95</status>
 				<midino>0x0E</midino>
 				<options />
@@ -516,7 +597,7 @@
 			<control>
 				<group>[Channel2]</group>
 				<description>Pad Mode - Sample</description>
-				<key>NumarkPartyMixII.switchToMode</key>
+				<key>NumarkPartyMixII.switchMode</key>
 				<status>0x95</status>
 				<midino>0x0B</midino>
 				<options />
@@ -524,7 +605,7 @@
 			<control>
 				<group>[Channel2]</group>
 				<description>Pad Mode - Effects</description>
-				<key>NumarkPartyMixII.switchToMode</key>
+				<key>NumarkPartyMixII.switchMode</key>
 				<status>0x95</status>
 				<midino>0x0F</midino>
 				<options />
